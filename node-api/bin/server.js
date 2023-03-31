@@ -12,10 +12,11 @@ import ChatGPTClient from '../src/ChatGPTClient.js';
 import ChatGPTBrowserClient from '../src/ChatGPTBrowserClient.js';
 import BingAIClient from '../src/BingAIClient.js';
 // import { ProxyAgent } from 'undici';
+import 'dotenv/config';
 
 const BillingURL = 'https://api.openai.com/dashboard/billing/credit_grants';
 
-const arg = process.argv.find((arg) => arg.startsWith('--settings'));
+const arg = process.argv.find(arg => arg.startsWith('--settings'));
 let settingPath;
 if (arg) {
     settingPath = arg.split('=')[1];
@@ -72,7 +73,6 @@ server.get('/', async (req, res) => {
     res.code(200);
     res.send('ok');
 });
-
 
 server.post('/api/usage', async (request, reply) => {
     const { hash } = request.body || {};
@@ -263,7 +263,9 @@ function getClient(clientToUseForMessage) {
         case 'chatgpt':
             settings.cacheOptions.namespace = settings.cacheOptions.namespace || 'chatgpt';
             // eslint-disable-next-line no-case-declarations
-            let configApiKey = settings.openaiApiKey || settings.chatGptClient.openaiApiKey;
+            // let configApiKey = settings.openaiApiKey || settings.chatGptClient.openaiApiKey;
+            // TODO: a better way to config api key
+            let configApiKey = process.env.OPENAI_API_KEY;
             if (!configApiKey) {
                 throw new Error('Api Key not config');
             }

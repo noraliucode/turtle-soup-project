@@ -214,14 +214,14 @@ function ChatComponent(props) {
     return (<div className="container">
         <div className="chatbox">
             <div className="top-bar">
-            <div className="avatar">
+            {/* <div className="avatar">
                 <p>W</p>
-            </div>
-            <div className="name">WebInfra</div>
-            <div className="menu">
+            </div> */}
+            <div className="name">歡迎來到海龜湯</div>
+            {/* <div className="menu">
                 <HeartOutline onClick={startCollect} />
                 <ShareLogo onClick={startShare} />
-            </div>
+            </div> */}
             </div>
             { hasNotice ? <div className='notice'>
                 <NoticeBar content={hasNotice} color='alert' closeable onClose={() => { setHasNotice('') }} />
@@ -238,13 +238,13 @@ function ChatComponent(props) {
                 </div>
             </div>
             <div className="bottom-bar">
-                <div className="prompt-container" style={{ visibility: typing ? 'hidden' : 'unset' }}>
+                {/* <div className="prompt-container" style={{ visibility: typing ? 'hidden' : 'unset' }}>
                     <Tag className='prompt-tag' onClick={(e) => { setSelectingPrompt(!selectingPrompt); }}>{ selectedPrompt?.label || '默认模式' }</Tag>
                     { selectingPrompt ? <PromotSelect onConfirm={onChoosePrompt} value={selectedPrompt?.value} visible={selectingPrompt} onClose={() => { setSelectingPrompt(false) }} /> : null }
-                </div>
+                </div> */}
                 <div className="chat">
                     {/* <Input type="text" value={question} onChange={inputQuestion} onEnterPress={directChat} placeholder="开始提问吧..." enterkeyhint="done" maxLength={300} autoFocus clearable /> */}
-                    <TextArea placeholder={selectedPrompt?.detail || '开始提问吧'}
+                    <TextArea placeholder={selectedPrompt?.detail || '請輸入你的提問'}
                         value={question}
                         onChange={inputQuestion}
                         rows={1}
