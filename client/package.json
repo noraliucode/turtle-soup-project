@@ -2,7 +2,7 @@
   "name": "chat-client",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://chat.webinfra.cloud/build",
+  "homepage": ".",
   "dependencies": {
     "@fortaine/fetch-event-source": "^3.0.6",
     "@microsoft/fetch-event-source": "^2.0.1",
