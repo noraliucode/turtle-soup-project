@@ -1,5 +1,5 @@
 // Run the server first with `npm run server`
-import { fetchEventSource } from '@fortaine/fetch-event-source';
+import { fetchEventSource } from '@microsoft/fetch-event-source';
 import { HOST_URL } from './config'
 
 export const callBridge = async (options) => {
