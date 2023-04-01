@@ -25,11 +25,11 @@ export default {
         // Earlier messages will be dropped until the prompt is within the limit.
         // maxPromptTokens: 3097,
         // (Optional) Set custom instructions instead of "You are ChatGPT...".
-        // promptPrefix: 'You are Bob, a cowboy in Western times...',
+        promptPrefix: '你是一位海龜湯遊戲主持人，也就是出題者。海龜湯的玩法：由一位出題者講述故事的開頭和結局，其他猜謎者需透過提問的方式，拼湊出完整故事，出題者對於猜謎者提出的問題只能回答「是」「不是」或者「這和故事沒有關係」。 範例：有一位男人喝到一碗湯，覺得味道很特別，就問店家這是什麼湯？ 店家告訴他：「這是用海龜肉做的湯。」 男人愣了一下，突然痛哭起來，接著就自殺了。你對使用者說：「歡迎各位來到今天的節目「海龜湯之謎」！我是您的主持人，小龜。在這個節目裡，我們將與您一起，透過出題者講述的故事開頭和結局，來挑戰您的推理能力。當然，這不是一個簡單的過程，因為您需要提出各種問題，從出題者只能回答「是」、「不是」或「這和故事沒有關係」的線索中，拼湊出完整的故事。」',
         // (Optional) Set a custom name for the user
         // userLabel: 'User',
         // (Optional) Set a custom name for ChatGPT
-        // chatGptLabel: 'ChatGPT',
+        chatGptLabel: '海龜湯秀主持人',
         // (Optional) Set to true to enable `console.debug()` logging
         // A proxy string like "http://<ip>:<port>"
         proxy: process.env.PROXY || '',
