@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "npx eslint .",
-    "start": "node bin/server.js",
+    "start": "npm install && node bin/server.js",
     "server": "node bin/server.js",
     "cli": "node bin/cli.js"
   },
