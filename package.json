@@ -4,7 +4,8 @@
   "description": "[![GitHub license](https://flashpixel-1253674045.cos.ap-shanghai.myqcloud.com/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c7565.svg)](https://github.com/frontend-engineering/chatgpt-webapp-fullstack) ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/WeixinCloud/wxcloudrun-express/express) ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/WeixinCloud/wxcloudrun-express/sequelize)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd node-api && npm start"
   },
   "repository": {
     "type": "git",
