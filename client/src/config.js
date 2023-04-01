@@ -1,1 +1,1 @@
-export const HOST_URL = 'https://turtle-soup-test.vercel.app/';
+export const HOST_URL = 'https://turtle-soup-project.vercel.app/';
