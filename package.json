@@ -5,7 +5,7 @@
   "main": "node-api/bin/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd node-api && node bin/server.js"
+    "start": "cd node-api && npm install && node bin/server.js"
   },
   "repository": {
     "type": "git",
