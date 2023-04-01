@@ -238,7 +238,7 @@ const port = settings.apiOptions?.port || settings.port || 3000;
 
 server.listen({
     port,
-    host: settings.apiOptions?.host || 'localhost',
+    host: '0.0.0.0',
 }, (error) => {
     console.log('server started: ', port);
     if (error) {
